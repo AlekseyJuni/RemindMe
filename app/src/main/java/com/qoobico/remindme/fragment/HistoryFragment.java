@@ -34,12 +34,12 @@ public class HistoryFragment extends AbstractTabFragment {
 
         RecyclerView ry = (RecyclerView) view.findViewById(R.id.recycleView);
         ry.setLayoutManager(new LinearLayoutManager(context));
-        ry.setAdapter(new RemindListAdapter(createMockData()));
+        ry.setAdapter(new RemindListAdapter(createMockRemindListData()));
 
         return view;
     }
 
-    private List<RemindDTO> createMockData() {
+    private List<RemindDTO> createMockRemindListData() {
         List<RemindDTO> data = new ArrayList<>();
         data.add (new RemindDTO("Item 1"));
         data.add (new RemindDTO("Item 2"));
